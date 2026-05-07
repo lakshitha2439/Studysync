@@ -1,0 +1,323 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StudySync Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #0f172a;
+      color: white;
+    }
+
+    .glass {
+      background: rgba(255,255,255,0.06);
+      backdrop-filter: blur(14px);
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .gradient-card {
+      background: linear-gradient(135deg,#4C4DDC,#A78BFA);
+    }
+
+    .hover-card:hover {
+      transform: translateY(-5px);
+      transition: 0.3s ease;
+    }
+  </style>
+</head>
+<body>
+
+<div class="flex min-h-screen">
+
+  <aside class="w-72 bg-slate-950 p-6 hidden lg:block border-r border-slate-800">
+    <h1 class="text-3xl font-extrabold text-indigo-400 mb-10">StudySync</h1>
+
+    <nav class="space-y-4 text-gray-300">
+      <div class="bg-indigo-500/20 text-indigo-300 p-3 rounded-xl">🏠 Dashboard</div>
+      <div class="hover:bg-slate-800 p-3 rounded-xl cursor-pointer">🎯 Focus Rooms</div>
+      <div class="hover:bg-slate-800 p-3 rounded-xl cursor-pointer">📚 Goals</div>
+      <div class="hover:bg-slate-800 p-3 rounded-xl cursor-pointer">🏆 Leaderboard</div>
+      <div class="hover:bg-slate-800 p-3 rounded-xl cursor-pointer">🌎 Community</div>
+      <div class="hover:bg-slate-800 p-3 rounded-xl cursor-pointer">⚡ Challenges</div>
+      <div class="hover:bg-slate-800 p-3 rounded-xl cursor-pointer">🤖 AI Coach</div>
+      <div class="hover:bg-slate-800 p-3 rounded-xl cursor-pointer">📜 Contracts</div>
+      <div class="hover:bg-slate-800 p-3 rounded-xl cursor-pointer">🎓 Teach-To-Earn</div>
+    </nav>
+  </aside>
+
+  <main class="flex-1 p-6 lg:p-10 overflow-y-auto">
+
+    <div class="flex flex-col lg:flex-row justify-between gap-6 items-start lg:items-center mb-8">
+      <div>
+        <h2 class="text-4xl font-bold">Welcome Back, Lakshitha 👋</h2>
+        <p class="text-gray-400 mt-2">Ready to crush your goals today?</p>
+      </div>
+
+      <button class="bg-indigo-500 hover:bg-indigo-600 px-6 py-3 rounded-2xl font-semibold shadow-lg shadow-indigo-500/30">
+        + Start Focus Session
+      </button>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 mb-8">
+
+      <div class="glass p-6 rounded-3xl hover-card">
+        <p class="text-gray-400">Today's Focus</p>
+        <h3 class="text-4xl font-bold mt-3">5.2h</h3>
+      </div>
+
+      <div class="glass p-6 rounded-3xl hover-card">
+        <p class="text-gray-400">Day Streak</p>
+        <h3 class="text-4xl font-bold mt-3">18 🔥</h3>
+      </div>
+
+      <div class="glass p-6 rounded-3xl hover-card">
+        <p class="text-gray-400">XP Points</p>
+        <h3 class="text-4xl font-bold mt-3">24,850</h3>
+      </div>
+
+      <div class="gradient-card p-6 rounded-3xl hover-card">
+        <p class="text-white/80">Level</p>
+        <h3 class="text-4xl font-bold mt-3">24</h3>
+      </div>
+    </div>
+
+    <div class="grid lg:grid-cols-3 gap-6 mb-8">
+
+      <div class="glass rounded-3xl p-6 lg:col-span-2">
+        <div class="flex justify-between items-center mb-6">
+          <h3 class="text-2xl font-bold">Focus Modes</h3>
+          <span class="text-indigo-300">Live Now</span>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-4">
+          <div class="bg-slate-800 p-5 rounded-2xl hover:bg-indigo-500/20 cursor-pointer">
+            <h4 class="font-bold text-xl">🍅 Pomodoro</h4>
+            <p class="text-gray-400 mt-2">25 min focus + breaks</p>
+          </div>
+
+          <div class="bg-slate-800 p-5 rounded-2xl hover:bg-indigo-500/20 cursor-pointer">
+            <h4 class="font-bold text-xl">🧠 Deep Focus</h4>
+            <p class="text-gray-400 mt-2">90-minute distraction-free mode</p>
+          </div>
+
+          <div class="bg-slate-800 p-5 rounded-2xl hover:bg-indigo-500/20 cursor-pointer">
+            <h4 class="font-bold text-xl">📖 Exam Sprint</h4>
+            <p class="text-gray-400 mt-2">Intense revision rooms</p>
+          </div>
+
+          <div class="bg-slate-800 p-5 rounded-2xl hover:bg-indigo-500/20 cursor-pointer">
+            <h4 class="font-bold text-xl">🚨 Emergency Mode</h4>
+            <p class="text-gray-400 mt-2">Lock in instantly</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="glass rounded-3xl p-6">
+        <div class="flex justify-between items-center mb-4">
+          <h3 class="text-2xl font-bold">AI Coach</h3>
+          <span>🤖</span>
+        </div>
+
+        <div class="space-y-4">
+          <div class="bg-slate-800 p-4 rounded-2xl">
+            <p class="text-gray-400">Peak Productivity</p>
+            <h4 class="font-bold text-xl">9 PM – 11 PM</h4>
+          </div>
+
+          <div class="bg-slate-800 p-4 rounded-2xl">
+            <p class="text-gray-400">Best Session Type</p>
+            <h4 class="font-bold text-xl">Deep Focus</h4>
+          </div>
+
+          <div class="bg-slate-800 p-4 rounded-2xl">
+            <p class="text-gray-400">Weekly Trend</p>
+            <h4 class="font-bold text-xl text-green-400">+18% Focus Growth</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid lg:grid-cols-2 gap-6 mb-8">
+
+      <div class="glass rounded-3xl p-6">
+        <h3 class="text-2xl font-bold mb-5">🎯 Active Goals</h3>
+
+        <div class="space-y-5">
+
+          <div>
+            <div class="flex justify-between mb-2">
+              <span>Read 12 Books</span>
+              <span>70%</span>
+            </div>
+            <div class="w-full bg-slate-700 rounded-full h-3">
+              <div class="bg-indigo-500 h-3 rounded-full w-[70%]"></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="flex justify-between mb-2">
+              <span>Complete CS Algorithms</span>
+              <span>45%</span>
+            </div>
+            <div class="w-full bg-slate-700 rounded-full h-3">
+              <div class="bg-purple-400 h-3 rounded-full w-[45%]"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="glass rounded-3xl p-6">
+        <h3 class="text-2xl font-bold mb-5">🏅 Recent Badges</h3>
+
+        <div class="grid grid-cols-2 gap-4">
+          <div class="bg-slate-800 rounded-2xl p-4 text-center">
+            🔥
+            <p class="mt-2">14-Day Streak</p>
+          </div>
+
+          <div class="bg-slate-800 rounded-2xl p-4 text-center">
+            ⚡
+            <p class="mt-2">Focus Warrior</p>
+          </div>
+
+          <div class="bg-slate-800 rounded-2xl p-4 text-center">
+            📚
+            <p class="mt-2">Exam Beast</p>
+          </div>
+
+          <div class="bg-slate-800 rounded-2xl p-4 text-center">
+            🧠
+            <p class="mt-2">Deep Work Master</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid lg:grid-cols-3 gap-6 mb-8">
+
+      <div class="glass rounded-3xl p-6 lg:col-span-2">
+        <div class="flex justify-between items-center mb-6">
+          <h3 class="text-2xl font-bold">🌍 Live Focus Rooms</h3>
+          <button class="bg-indigo-500 px-5 py-2 rounded-xl">Create Room</button>
+        </div>
+
+        <div class="space-y-4">
+
+          <div class="bg-slate-800 rounded-2xl p-5 flex justify-between items-center">
+            <div>
+              <h4 class="font-bold">STEM Deep Focus</h4>
+              <p class="text-gray-400">124 students studying</p>
+            </div>
+            <button class="bg-indigo-500 px-4 py-2 rounded-xl">Join</button>
+          </div>
+
+          <div class="bg-slate-800 rounded-2xl p-5 flex justify-between items-center">
+            <div>
+              <h4 class="font-bold">Medical Exam Sprint</h4>
+              <p class="text-gray-400">89 students studying</p>
+            </div>
+            <button class="bg-indigo-500 px-4 py-2 rounded-xl">Join</button>
+          </div>
+
+          <div class="bg-slate-800 rounded-2xl p-5 flex justify-between items-center">
+            <div>
+              <h4 class="font-bold">Silent Coworking</h4>
+              <p class="text-gray-400">214 active users</p>
+            </div>
+            <button class="bg-indigo-500 px-4 py-2 rounded-xl">Join</button>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="glass rounded-3xl p-6">
+        <h3 class="text-2xl font-bold mb-5">🏆 Leaderboard</h3>
+
+        <div class="space-y-4">
+          <div class="flex justify-between bg-slate-800 p-4 rounded-xl">
+            <span>🥇 Alex K</span>
+            <span>54,200 XP</span>
+          </div>
+
+          <div class="flex justify-between bg-slate-800 p-4 rounded-xl">
+            <span>🥈 Mia J</span>
+            <span>48,000 XP</span>
+          </div>
+
+          <div class="flex justify-between bg-slate-800 p-4 rounded-xl">
+            <span>🥉 Ethan P</span>
+            <span>42,900 XP</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid lg:grid-cols-2 gap-6 mb-8">
+
+      <div class="glass rounded-3xl p-6">
+        <h3 class="text-2xl font-bold mb-5">⚡ Challenges</h3>
+
+        <div class="space-y-4">
+          <div class="bg-slate-800 rounded-2xl p-5">
+            <div class="flex justify-between items-center">
+              <h4 class="font-bold">Early Bird Week</h4>
+              <span class="text-green-400">Easy</span>
+            </div>
+            <p class="text-gray-400 mt-2">Wake up before 9AM for 5 days</p>
+            <button class="mt-4 bg-indigo-500 px-4 py-2 rounded-xl">Join Challenge</button>
+          </div>
+
+          <div class="bg-slate-800 rounded-2xl p-5">
+            <div class="flex justify-between items-center">
+              <h4 class="font-bold">100-Minute Sprint</h4>
+              <span class="text-yellow-400">Medium</span>
+            </div>
+            <p class="text-gray-400 mt-2">Complete uninterrupted focus sessions</p>
+            <button class="mt-4 bg-indigo-500 px-4 py-2 rounded-xl">Join Challenge</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="glass rounded-3xl p-6">
+        <h3 class="text-2xl font-bold mb-5">📜 Accountability Contract</h3>
+
+        <form class="space-y-4">
+          <input type="text" placeholder="Contract Title" class="w-full bg-slate-800 p-4 rounded-xl outline-none">
+          <input type="text" placeholder="Subject" class="w-full bg-slate-800 p-4 rounded-xl outline-none">
+          <input type="text" placeholder="Goal Hours" class="w-full bg-slate-800 p-4 rounded-xl outline-none">
+          <input type="text" placeholder="Consequence if failed" class="w-full bg-slate-800 p-4 rounded-xl outline-none">
+          <button class="w-full bg-indigo-500 py-4 rounded-xl font-semibold">Create Contract</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="glass rounded-3xl p-6 mb-8">
+      <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-5">
+
+        <div>
+          <h3 class="text-3xl font-bold">🚨 Emergency Focus Mode</h3>
+          <p class="text-gray-400 mt-2">AI detected procrastination. Time to lock in.</p>
+        </div>
+
+        <button class="bg-red-500 hover:bg-red-600 px-8 py-4 rounded-2xl font-bold text-lg">
+          LOCK IN NOW
+        </button>
+
+      </div>
+    </div>
+
+  </main>
+</div>
+
+</body>
+</html>
+
+
+
